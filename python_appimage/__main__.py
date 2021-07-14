@@ -101,12 +101,7 @@ def main():
         return
 
     # execute the command
-    # with open(os.path.join("python_appimage", "data", "releases.json")) as f:
-    #     content = f.read()
-    #     args.base_image = content
     args.base_image = os.path.abspath(os.path.join("python_appimage", "data", "python3.9.6-cp39-cp39-manylinux1_x86_64.AppImage"))
-    # args.base_image = os.path.abspath(os.path.join("python_appimage", "data", "releases.json"))
-    # args.base_image = json.loads(os.path.join("python_appimage", "data", "releases.json"))
     command.execute(*command._unpack_args(args))
 
 
