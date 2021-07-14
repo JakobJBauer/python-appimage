@@ -19,7 +19,7 @@ _ARCH = platform.machine()
 PREFIX = os.path.abspath(os.path.dirname(__file__) + '/..')
 '''Package installation prefix'''
 
-APPIMAGETOOL = os.path.expanduser('~/.local/bin/appimagetool')
+APPIMAGETOOL = os.path.abspath(os.path.join('python_appimage', 'data', 'appimagetool-x86_64.AppImage'))
 '''Location of the appimagetool binary'''
 
 EXCLUDELIST = PREFIX + '/data/excludelist'
